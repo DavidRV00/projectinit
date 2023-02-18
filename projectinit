@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -x
+
+git init --initial-branch=master
+
+touch .envrc && direnv allow
+touch .exrc
+touch .gitignore
+
+# TODO: Parameterize this
+git remote add gitea "https://git.davidv.xyz/david/$(basename "$(pwd)").git"

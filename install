@@ -1,0 +1,5 @@
+#!/bin/sh
+
+set -x
+
+cp ./projectinit /usr/local/bin/
